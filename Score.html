@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score</title>
+</head>
+<body>
+    <script>
+        function printGrade(midtermScore, finalScore){
+        let totalScore = midtermScore + finalScore;
+
+            if (totalScore>=90){
+                document.write("A학점입니다."+"<br>")
+            } else if(totalScore > 80 && totlaScore < 90){
+                document.write("B학점입니다."+"<br>")
+            } else if(totalScore > 70 && totlaScore < 80) { 
+                document.write("C학점입니다."+"<br>")
+            } else if(totalScore > 60 && totlaScore < 70) { 
+                document.write("D학점입니다."+"<br>")
+            } else {
+                document.write("F학점입니다."+"<br>")
+            }
+    }
+    printGrade(25, 35);
+    printGrade(50, 45);
+    printGrade(29, 24);
+    printGrade(37, 42);
+    </script>
+</body>
+</html>
